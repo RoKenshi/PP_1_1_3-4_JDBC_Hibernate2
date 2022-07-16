@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
         user.createUsersTable();
     }
 
-    public void dropUsersTable() {
+    public void dropUsersTable() throws SQLException {
         user.dropUsersTable();
     }
 
@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
         return user.getAllUsers();
     }
 
-    public void cleanUsersTable() {
+    public void cleanUsersTable() throws SQLException {
         user.cleanUsersTable();
     }
 
