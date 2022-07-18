@@ -48,8 +48,6 @@ public class UserDaoHibernateImpl implements UserDao {
         } catch (Exception e) {
             session.getTransaction().rollback();
             e.printStackTrace();
-        } finally {
-            session.close();
         }
 
     }
